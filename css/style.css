@@ -60,3 +60,50 @@ nav img {
 .nav-links ul li:hover::after{
     width: 100%;
 }
+
+.text-box{
+    width: 90%;
+    color: var(--white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 65px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: var(--white);
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--white);
+    border: 2px solid var(--white);
+    padding: 12px 35px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid var(--red);
+    background: var(--red);
+    transition: 1s;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+}
